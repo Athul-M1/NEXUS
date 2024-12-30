@@ -14,6 +14,14 @@ import Earnings from './AdminPanel/Earnings'
 import Contact from './Components/Contact'
 import Wishlist from './Components/Wishlist'
 import Cart from './Components/Cart'
+import Profile from './Components/Profile'
+import Genre from './Components/Genre'
+import GameDetails from './Components/GameDetails'
+import ForgotPassword from './Components/ForgotPassword'
+import ResetPassword from './Components/ResetPassword'
+import OrderPage from './Components/OrderPage'
+import Allorders from './Components/Allorders'
+
 
 function App() {
   return (
@@ -33,6 +41,16 @@ function App() {
       <Route path='/wishlist' element={<Wishlist/>}/>
       <Route path='/admin/earnings' element={<Earnings/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path='/profile' element={<Profile/>}/>
+      <Route path='/puzzle' element={<Genre  genre={'Puzzle'} />}/>
+      <Route path='/action' element={<Genre  genre={'Action'} />}/>
+      <Route path='/racing' element={<Genre  genre={'Racing'} />}/>
+      <Route path='/story' element={<Genre  genre={'story'}/>}/>
+      <Route path='/details/:id' element={<GameDetails/>}/>
+      <Route path='/forgotpassword' element={<ForgotPassword/>}/> 
+      <Route path='/resetpassword/:token' element={<ResetPassword/>}/>
+      <Route path='/order/:id' element={<OrderPage/>}/>
+      <Route path='/all-orders' element={<Allorders/>}/>
      </Routes>
      <Footer/>
     </>

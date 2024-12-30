@@ -29,7 +29,7 @@ const Sidebar = () => {
             <li><button className='btn btn-outline-dark w-100'>Downloads</button></li>
           </Link>
           <Link to={'/admin/reviews'}>
-            <li><button className='btn btn-outline-dark w-100'>Reviews</button></li>
+            <li><button className='btn btn-outline-dark w-100'>Products</button></li>
           </Link>
           <Link to={'/admin/earnings'}>
             <li><button className='btn btn-outline-dark w-100'>Total Earnings</button></li>
